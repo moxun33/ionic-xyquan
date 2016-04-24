@@ -1,0 +1,124 @@
+<ion-header-bar align-title="center" class="bar-balanced">
+    <div class="h1 title center">昂克斯</div>
+    <div class="buttons">
+
+        <button  href="#/tab/account-profile" class="button menu-animated button-icon icon ion-android-add">
+            <button ui-sref="#/tab/account-setting" class="button  button-icon icon ion-gear-a"></button>
+        </button>
+    </div>
+</ion-header-bar>
+<ion-view title="我" class="">
+
+
+
+    <ion-content class="stable-bg">
+
+
+
+      <div class=" balanced-bg "style="">
+
+          <div class="item item-avatar-left balanced-bg" >
+              <img src="https://static.pexels.com/photos/7529/pexels-photo-medium.jpeg"
+                   style="margin-left: 20px;margin-top: 10px;">
+              <div style="margin-left: 30px;margin-top: 10px;">
+                  <h2 class=""><font style="font-size:20px;color: white;">用户名</font></h2>
+                  <p class="" style="color: white;">等级:LV2</p>
+              </div>
+              <hr style="height:1px;border:none;border-top:1px dashed #28a54c;"/>
+              <div class="row" style="margin-left: -33px;">
+                  <div class="col col-offset-10" >
+                        <h2 style="color: white">当前积分:33</h2>
+                  </div>
+                  <div class="col " style="margin-left:0px;">
+                      <h2 style="color: white">升级还需44</h2>
+                  </div>
+
+              </div>
+              <div class="row " >
+                    <div class="col " style="margin-left: -55px;">
+
+
+                            <button style="border-radius: 35px;" ng-click="showCredit()"
+                                    class="button button-block button-energized">
+                                    <h2 style="color: white">查看积分行为 </h2>
+                             </button>
+
+                    </div>
+              </div>
+          </div>
+
+      </div>
+      <div class="row" style="">
+          <div class="col " >
+
+            <a href="" style="text-decoration: none;">
+                  <div class="item item-avatar" ng-click="publishBookmark()">
+                      <img src="https://static.pexels.com/photos/7200/sunset-beach-ocean-medium.jpg"
+                           style="margin-top:15px;">
+                      <div>
+                          <h1>9</h1>
+                          <p>已发布</p>
+
+                      </div>
+                  </div>
+
+            </a>
+
+
+          </div>
+          <div class="col">
+              <a href="" style="text-decoration: none;">
+              <div class="item item-avatar" ng-click="publishBookmark()">
+                  <img src="https://static.pexels.com/photos/7200/sunset-beach-ocean-medium.jpg" style="margin-top:15px;">
+                  <div>
+                      <h1>4</h1>
+                      <p>收藏</p>
+                  </div>
+              </div>
+              </a>
+          </div>
+
+      </div>
+
+      <div class="row" style="">
+          <div class="col " >
+
+
+              <div class="item item-avatar">
+
+                  <div style="margin-left: -30px;">
+                      <h3>微博认证</h3>
+                      <button ng-click="weiboAuth()" class="button button-balanced button-small">
+                       立即认证
+                      </button>
+                      <h5>可得100积分</h5>
+
+                  </div>
+              </div>
+
+
+
+
+          </div>
+          <div class="col">
+              <div class="item item-avatar">
+
+                  <div style="margin-left: -30px;">
+                      <h3>学号认证</h3>
+                      <button  ng-click="studentAuth()" class="button button-balanced button-small">
+                          立即认证
+                      </button>
+                      <h5>可得120积分</h5>
+
+                  </div>
+              </div>
+
+          </div>
+          </div>
+
+      </div>
+
+
+
+  </ion-content>
+</ion-view>

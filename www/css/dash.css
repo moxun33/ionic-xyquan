@@ -1,0 +1,30 @@
+/*首页中推荐和最新的TAB*/
+.dash-tabs{
+    opacity:0.9;
+    margin-top:-11px;
+    height: 35px;
+    text-decoration: none;
+}
+.dash-reommd-wd{
+    opacity:100;
+}
+.dash-newest-wd{
+    opacity:3;
+}
+
+.first-list{
+
+    background-color:#fffffe;
+ }
+
+
+.second-list{
+    background-color:#fffffe;
+
+  }
+
+/*推荐物品*/
+.recommd-list{
+    text-decoration: none;
+    margin-top:25px;
+}

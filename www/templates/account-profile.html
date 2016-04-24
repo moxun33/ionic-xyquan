@@ -1,0 +1,61 @@
+<ion-view title="编辑资料" hide-tabs>
+
+
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ng-click="saveRecord()"> 保存 </a>
+    </ion-nav-buttons>
+
+    <ion-content class="stable-bg">
+
+        <div class="list" style="text-decoration: none;">
+            <div class="item item-icon-right item-icon-right item-thumbnail-right " ng-click="changeAvatar()">
+                <img src="https://static.pexels.com/photos/7529/pexels-photo-medium.jpeg">
+                <h2 style="margin-top: 30px;">头像</h2>
+            </div>
+
+
+            <div class="item item-icon-right item-button-right " ng-show="!isLogin">
+
+                昵称
+                <button class="button button-dark button-clear" ng-click="checkLogin()">hdun</button>
+            </div>
+            <div  class="item item-icon-right item-button-right " ng-show="!isLogin">
+
+                教育
+                <button  class="button button-dark button-clear" style="margin-right:20px;"
+                   ng-click="changeUniversity()">
+                    <h3>广东工业大学/2012级/自动化</h3></button>
+                <i class="icon ion-ios-arrow-right"></i>
+            </div>
+
+            <div  class="item item-icon-right item-button-right " ng-show="!isLogin">
+
+                手机
+                <button class="button button-dark button-clear" style="margin-right:20px;"
+                   ng-click="changePhone()">
+                    <h3>135385495633</h3></button>
+                <i class="icon ion-ios-arrow-right"></i>
+            </div>
+            <div  class="item item-icon-right item-button-right " ng-show="!isLogin">
+
+                QQ
+                <button  class="button button-dark button-clear" style="margin-right:20px;"
+                   ng-click="changeQQ()">
+                    <h3>8547549674 </h3></button>
+                <i class="icon ion-ios-arrow-right"></i>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </ion-content>
+
+
+</ion-view>

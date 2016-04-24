@@ -1,0 +1,61 @@
+<ion-header-bar align-title="center" class="bar-balanced">
+  <div class="h1 title center">昂克斯</div>
+  <div class="buttons">
+
+    <button class="button no-animation button-icon icon ion-android-add">
+    </button>
+  </div>
+</ion-header-bar>
+<ion-view >
+
+<!--  <div  class=" tabs-striped tabs-top  tabs-background-balanced tabs-color-assertive"  >
+    <div  class="tabs dash-tabs"  >
+      <a  class="tab-item active dash-recommd-wd " href="#/tab/dash" style=" ">
+        <strong>推荐</strong>
+      </a>
+
+      <a  class="tab-item dash-newest-wd" href="#/newest" style="" on-swipe-right="onSwipeRight('tab.newest')">
+        <strong>最新</strong>
+      </a>
+    </div>
+  </div>-->
+
+  <ion-content  class="stable-bg " ng-controller="GoodsListCtrl"  style="background-color:#e6e2e1;margin-top:0px;"
+                on-swipe-left="onSwipeLeft()">
+
+
+    <ion-refresher
+            pulling-text="下拉刷新..."
+            on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list ng-controller="DashCtrl"
+              show-delete="shouldShowDelete"
+              show-reorder="shouldShowReorder"
+              can-swipe="listCanSwipe">
+      <ion-item ng-repeat="item in items"
+                class="item-thumbnail-left"
+                ui-sref="tab.goodsDetail/">
+
+        <!--<img ng-src="{{item.img}}">-->
+        <img ng-src="img/iphone.png" >
+        <h2>{{item.title}}用户名{{$index}}</h2>
+        <p><!--{{item.description}}-->全新的苹果手机</p>
+      <p style="margin-top:25px;">
+        <span style="color: #e42012">¥612{{$index}}</span>
+        <span>广州大学城</span>
+      </p>
+
+      </ion-item>
+    </ion-list>
+
+
+
+
+
+
+
+
+
+  </ion-content>
+
+</ion-view>

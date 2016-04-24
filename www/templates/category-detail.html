@@ -1,0 +1,33 @@
+<ion-header-bar align-title="left" class="bar-balanced">
+    <div class="buttons">
+        <button class="button button-icon icon ion-arrow-left-c" ui-sref="tab.category">
+        </button>
+    </div>
+
+    <div class="h1 title" ng-bind="category.name"></div>
+
+</ion-header-bar>
+
+
+    <ion-content class="stable-bg padding-horizontal " >
+            <ion-list ng-controller="CategoryCtrl"
+                      >
+                <ion-item ng-repeat="item in items"
+                          class="item-thumbnail-left"
+                          ui-sref="tab.catGoodsDetail">
+
+                    <!--<img ng-src="{{item.img}}">-->
+                    <img ng-src="img/ionic.png" >
+                    <h2>{{item.title}}物体名称{{$index}}</h2>
+                    <p><!--{{item.description}}-->全新的苹果手机</p>
+                    <p style="margin-top:25px;">
+                        <span style="color: #e42012">¥612{{$index}}</span>
+                        <span>广州大学城</span>
+                    </p>
+
+                </ion-item>
+            </ion-list>
+
+
+    </ion-content>
+

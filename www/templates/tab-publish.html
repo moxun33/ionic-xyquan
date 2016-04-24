@@ -1,0 +1,81 @@
+<ion-header-bar align-title="left" class="bar-balanced">
+
+ <!-- <div class="buttons">
+    <button class="button no-animation button-icon icon ion-android-search">
+    </button>
+    <button class="button no-animation button-icon icon ion-android-add">
+    </button>
+  </div>-->
+  <div class="h1 title title-right"><a href="#/tab/" style="text-decoration: none"> 发布</a></div>
+
+</ion-header-bar>
+<ion-view >
+
+
+  <ion-content class="padding stable-bg" ng-controller="PublishCtrl">
+
+
+          <div class="list  list-borderless" >
+            <div class="item item-thumbnail-left" style="border-bottom:1px solid rgba(128, 147, 179, 0.48);" >
+              <div class="row">
+                <div ng-click="uploadPic()" class="col " style="text-align: center;margin-left: -90px;">
+                  <img src="/img/uploadPic.png" ng-click=""><br/>
+                  <p>上传照片</p>
+                </div>
+
+              </div>
+
+            </div>
+            <label class="item item-input item-floating-label" style="border-bottom:1px solid #8093B3;" >
+              <span class="input-label">title</span>
+              <input type="text" placeholder="标题">
+            </label>
+            <label class="item item-input item-floating-label" style="border-bottom:1px solid #8093B3;" >
+              <span class="input-label">description</span>
+              <input type="text" placeholder="描述(不少于15字)">
+            </label>
+            <label class="item item-input item-floating-label" style="border-bottom:1px solid #8093B3;" >
+              <span class="input-label">price</span>
+              <input type="text" placeholder="价格">
+            </label>
+
+            <div class="row">
+              <div class="col col-offset-33">
+                <button class="button button-block button-light"
+                        style="width:50%;border-color: #8093B3;border-radius: 35px"
+                        ng-click="slectCate()">选择分类
+                </button>
+              </div>
+            </div>
+           <!-- <label class="item item-input item-select">
+              <div class="input-label">
+                Lightsaber
+              </div>
+              <select>
+                <option>Blue</option>
+                <option selected>Green</option>
+                <option>Red</option>
+              </select>
+            </label>
+-->
+            <label class="item item-input item-floating-label" style="border-bottom:1px solid #8093B3;" >
+              <span class="input-label">place</span>
+              <input type="text" placeholder="交易地点">
+            </label>
+            <label class="item item-input item-floating-label" style="border-bottom:1px solid #8093B3;" >
+              <span class="input-label">phone</span>
+              <input type="text" placeholder="手机号">
+            </label>
+            <label class="item item-input item-floating-label" style="border-bottom:1px solid #8093B3;" >
+              <span class="input-label">QQ</span>
+              <input type="text" placeholder="QQ号">
+            </label>
+
+
+          </div>
+
+
+
+  </ion-content>
+
+</ion-view>

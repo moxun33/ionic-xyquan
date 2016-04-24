@@ -1,0 +1,57 @@
+
+<ion-view title="校易圏">
+  <!--最新-->
+  <div class=" tabs-striped tabs-top  tabs-background-balanced tabs-color-assertive"  >
+    <div class="tabs"  style=" opacity:0.9;margin-top:-11px;height: 35px;">
+      <a class="tab-item " href="#/tab" style="opacity:1; ">
+        <strong>推荐</strong>
+      </a>
+
+      <a class="tab-item active" href="#/tab/newest" style="opacity:3;" on-swipe-left="onSwipeLeft('tab.dash')">
+        <strong>最新</strong>
+      </a>
+    </div>
+  </div>
+
+  <ion-content class="stable-bg" ng-controller="GoodsCtrl"  style="background-color:#F0F3F8"
+               on-swipe-right="onSwipeRight()">
+
+
+    <ion-refresher
+            pulling-text="下拉刷新..."
+            on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list>
+
+      <div class="row" style="text-decoration: none;">
+
+        <a class="col col-49" href="#/tab/goods-detail" style="text-decoration: none;background-color:#fffffe;">
+          <div class="col col100" >
+            <img ng-src="img/8.png" >
+
+          </div>
+
+          <div class="col col100">
+            <p style="font-size: 12px;">九成新的手机...</p>
+
+          </div>
+          <div class="col col100">
+            <p style="font-size: 12px;">serfer</p>
+          </div>
+          <div class="col col100">
+            <div class="col col-65"><p style="font-size: 10px;">地址2</p></div>
+            <div class="col col-35"><p style="font-size: 10px;color:red;">￥12</p></div>
+          </div>
+        </a>
+
+
+
+      </div>
+
+
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>
